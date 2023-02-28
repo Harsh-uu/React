@@ -6,11 +6,11 @@ return(
     <section className="counter">
         {num}
         <button onClick={()=>{
-            setNum(num-1)
-        }}>decrement</button>
-        <button onClick={()=>{
             setNum(num+1)
         }}>increment</button>
+        <button onClick={()=>{
+            setNum(num-1)
+        }}>decrement</button>
         <button onClick={()=>{
             setNum(0)
         }}>reset</button>
