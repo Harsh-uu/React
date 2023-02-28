@@ -1,10 +1,18 @@
 import User from './User'
+import { useState } from "react"
 function App() {
+  const [num,setNum]=useState(0);
   return (
-    <div className='App'>
+    <>
       <h1>Hello World!</h1>
       <User/>
-    </div>
+      <section className='counter'>
+      {num}
+      <button onClick={()=>{
+       setNum(num+1)
+      }}>increment</button>
+      </section>
+      </>
   );
 }
 
